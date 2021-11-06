@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="icon" href="images/icon.png">
+    <link rel="stylesheet" type="" href="../../assets/stylesheets/style.css">
+    <script src="https://kit.fontawesome.com/ad6907aadb.js" crossorigin="anonymous"></script>
+    <title>Camal University</title>
+     <style>
+        .body_section_1
+        {
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            animation: animate 20s ease-in-out infinite;
+        } 
+        @keyframes animate
+        {
+            0%
+            {
+                background-image:url(<%= asset_path("camal.jpg") %>);
+            }
+            25%
+            {
+                background-image:url( <%= asset_path("caravan1.jpg")%>) ;
+            }
+            50%
+            {
+                background-image:url(<%= asset_path("caravan2.jpg")%>);
+            }
+            75%
+            {
+                background-image:url(<%= asset_path("caravan3.jpg")%>);
+            }
+            100%
+            {
+                background-image:url(<%= asset_path("caravan4.jpg")%>);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--header-->
+    <section class="header contain">
+        <div>
+            <nav>
+                <div id="img">
+                    <%= image_tag("icon.png",:width=>"100px") %>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">The Camal</a>
+                        <ul>
+                            <li>
+                            <a href="">Discover</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Stedents space</a>
+                        <ul>
+                            <li><a href="">Courses</a></li>
+                            <li><a href="">Bourses</a></li>
+                            <li><a href="">Clubs</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Contact us</a>
+                        <ul>
+                            <li>
+                                <a href="">Mail us</a>
+                            </li>
+                            <li>
+                                <a href="">Call us</a>
+                            </li>
+                            <li><a href="">Tweet us</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">About us</a>
+                    </li> 
+                    <li>
+                        <a href="../users/index">Sign in</a>
+                    </li>
+                    <li>
+                        <a href="../users/login">Log in</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <!--body-->
+    <section class="body_section_1 contain">
+       <div class="fother">
+           <div>
+            <i class="fas fa-globe-africa"></i>
+               <div>
+                    <h2>
+                        Online courses 
+                    </h2>
+                    <h3>
+                        view More
+                    </h3>
+               </div>
+           </div>
+           <div>
+            <i class="fas fa-book-reader"></i>
+                <div>
+                    <h2>
+                        Our Library
+                    </h2>
+                    <h3>
+                        view More
+                    </h3>
+                </div>
+           </div>
+           <div>
+            <i class="fas fa-user-tie"></i>
+                <div>
+                    <h2>
+                        Our Profissors
+                    </h2>
+                    <h3>
+                        view More
+                    </h3>
+                </div>
+            </div>
+           </div>
+    </section>
+    <!--footer-->
+    <section class="footer contain">
+        <div>
+            <label>privacy & policy</label>
+            <label>Support</label>
+        </div>
+        <div>
+            <label>&copy; Camal</label>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/stylesheets/space.css">
+    <script src="https://kit.fontawesome.com/ad6907aadb.js" crossorigin="anonymous"></script>
+    <script src="../../assets/config/style.js"></script>
+    <title>Student space</title>
+    <script>
+        
+function one() 
+{
+    document.getElementById('one').style.zIndex = "4";
+    document.getElementById('two').style.zIndex = "2";
+    document.getElementById('tree').style.zIndex = "2";
+    document.getElementById('four').style.zIndex = "2";
+    document.getElementById('five').style.zIndex = "2";
+    document.getElementById('six').style.zIndex = "2";
+
+}
+function two() 
+{
+    document.getElementById('one').style.zIndex = "3";
+    document.getElementById('two').style.zIndex = "4";
+    document.getElementById('tree').style.zIndex = "2";
+    document.getElementById('four').style.zIndex = "2";
+    document.getElementById('five').style.zIndex = "2";
+    document.getElementById('six').style.zIndex = "2";
+
+}
+function tree() 
+{
+    document.getElementById('one').style.zIndex = "3";
+    document.getElementById('two').style.zIndex = "2";
+    document.getElementById('tree').style.zIndex = "4";
+    document.getElementById('four').style.zIndex = "2";
+    document.getElementById('five').style.zIndex = "2";
+    document.getElementById('six').style.zIndex = "2";
+
+}
+function four() 
+{
+    document.getElementById('one').style.zIndex = "3";
+    document.getElementById('two').style.zIndex = "2";
+    document.getElementById('tree').style.zIndex = "2";
+    document.getElementById('four').style.zIndex = "4";
+    document.getElementById('five').style.zIndex = "2";
+    document.getElementById('six').style.zIndex = "2";
+
+}
+function five() 
+{
+    document.getElementById('one').style.zIndex = "3";
+    document.getElementById('two').style.zIndex = "2";
+    document.getElementById('tree').style.zIndex = "2";
+    document.getElementById('four').style.zIndex = "2";
+    document.getElementById('five').style.zIndex = "4";
+    document.getElementById('six').style.zIndex = "2";
+
+}
+
+function six() 
+{
+    document.getElementById('one').style.zIndex = "3";
+    document.getElementById('two').style.zIndex = "2";
+    document.getElementById('tree').style.zIndex = "2";
+    document.getElementById('four').style.zIndex = "2";
+    document.getElementById('five').style.zIndex = "2";
+    document.getElementById('six').style.zIndex = "4";
+
+}
+
+    </script>
+    <style>
+    .Mother
+    {
+    background-image:url(<%= asset_path('caravan1.jpg') %>)
+    }
+    </style>
+</head>
+<body>
+    <section class="Mother">
+         <div class="head">
+            <span id="img">
+            <%= image_tag("icon.png",:width =>"150px") %>
+            </span>
+            <h1>student space</h1>
+            <span>
+            <%= image_tag("Learning-bro.png",:width =>"300px") %>
+            </span>
+        </div>
+        <aside class="side">
+            <div class="user">
+                <i class="fas fa-bell"></i>
+                <i class="fas fa-sms"></i>
+            </div>
+            <div>
+                <div id="user_pic" style ="background-image :url('../images/camal.jpg')">
+                   
+                </div>
+                <span></span>
+                <ul>
+                    <li>
+                        <a href="../homes/index">log out</a>
+                    </li>
+                    <li>
+                        <a href="">Advanced seeting</a>
+                    </li>
+                    <li>
+                        <a href="">Update pasword</a>
+                    </li>
+                    <li>
+                        <a href="">Contact Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+       
+        <div class="profile view" id="one" onclick="one()">
+        <div class="left_profile">
+                <div>
+                    <h1>Welcome back</h1>
+                    <img src="../images/camal.jpg" alt="">
+                    <h2>name</h2>
+                </div>
+                <div>
+                    <h1>Notifications</h1>
+                    <div class="missages">
+
+                    </div>
+                </div>
+            </div>
+            <div class="right_profile">
+                <div class="notes">
+                    <h1>Grads</h1>
+                    <table>
+                        <tr>
+                            <th>Subject</th>
+                            <th>control 1</th>
+                            <th>control 2</th>
+                            <th>control 3</th>
+                            <th>Exam</th>
+                        </tr>
+                        <tr>
+                            <th>Java</th>
+                            <td>
+                                18
+                            </td>
+                            <td>
+                                18
+                            </td>
+                            <td>
+                                18
+                            </td>
+                            <td>
+                                18
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>CPP</th>                        
+                            <td>
+                                18
+                            </td>
+                            <td>
+                                18
+                            </td>
+                            <td>
+                                18
+                            </td>
+                            <td>
+                                18
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>C</th>
+                            <td>
+                                18
+                            </td>
+                            <td>
+                                18
+                            </td>
+                            <td>
+                                18
+                            </td>
+                            <td>
+                                18
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>SQL</th>
+                            <td>
+                                18
+                            </td>
+                            <td>
+                                18
+                            </td>
+                            <td>
+                                18
+                            </td>
+                            <td>
+                                18
+                            </td>
+                        </tr>
+                    </table>
+                    <a href="#" onclick="two()">see more</a>
+                </div>
+                <div class="skils">
+                    <h1>School behavior</h1>
+                        <div>
+                            <label for="">respecting</label>
+                            <progress value="7" max="10"></progress>
+                        </div>
+                        <div>
+                            <label for="">hardworking</label>
+                            <progress value="5" max="10"></progress>
+                        </div>
+                        <div>
+                            <label for="">active</label>
+                            <progress value="7" max="10"></progress>
+                        </div>
+                        <div>
+                            <label for="">annoying</label>
+                            <progress value="4" max="10"></progress>
+                        </div>
+                        <div>
+                            <label for="">sociable</label>
+                            <progress value="5" max="10"></progress>
+                        </div>
+                </div>
+            </div>
+        </div>
+       <div class="grads view" id="two" onclick="two()">
+
+       </div>
+        <div class="following view" id="tree" onclick="tree()">
+
+        </div>
+        <div class="clubs view" id="four" onclick="four()">
+
+        </div>
+        <div class="contact_p view" id="five" onclick="five()">
+
+        </div>
+        <div class="seeting view" id="six" onclick="six()">
+
+        </div>
+    </section>
+</body>
+</html>

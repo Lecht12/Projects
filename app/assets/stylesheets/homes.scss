@@ -1,0 +1,249 @@
+/*home page style --------------------------------------------*/
+*
+{
+    margin: 0;
+    padding: 0;
+    background-size: 100% 100%;    
+    text-decoration: none;
+    list-style: none;
+}
+.contain
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100px;
+    z-index: 100;
+}
+.header nav 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.header nav #img
+{
+    width:200px;
+    margin-left: 150px;
+}
+.header nav ul
+{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 900px;
+    height: fit-content;
+   
+}
+.header nav ul li
+{
+    padding-right: 5px;
+    width: fit-content;
+    height: fit-content;
+}
+.header nav ul li a
+{
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 600;
+    font-size: 20PX;
+    letter-spacing: .1rem;
+    margin-right: 20px;
+    color: white;
+}
+.header nav ul li a:hover
+{
+    border-bottom: solid 1px #ffffff;
+    transition: left 250ms ease-in-out, right 250ms ease-in-out;
+    color: crimson;
+    transition: color .5s;
+}
+.header nav ul li ul
+{
+    position: absolute;
+    margin-right: 150px;
+    margin-top: 2px;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 155px;
+    height: fit-content;
+    visibility: hidden;
+    background-color: rgba(255, 255, 255, 0.589);
+}
+.header nav ul li ul li
+{
+    margin: 5px 0 5px 0;
+    width:150px;
+}
+.header nav ul li ul li a
+{
+    font-weight: 200;
+    width: 100%;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+}
+.header nav ul li ul li a:hover
+{
+    border: unset;
+    transition: none;
+}
+.header nav ul li ul li:hover
+{
+    cursor: pointer;
+    background-color: #757575;
+}
+.header nav ul li:hover > ul
+{
+    visibility: visible;
+}
+.header nav ul li ul::after
+{
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: 0px;
+    width: 0; 
+    height: 0; 
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid rgb(255, 255, 255);
+}
+/*body ----------------------------------------------------------------------*/
+.body_section_1
+{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: animate 20s ease-in-out infinite;
+} 
+@keyframes animate
+{
+    0%
+    {
+        background-image: url(../images/camal.jpg);
+    }
+    25%
+    {
+        background-image: url(../images/caravan1.jpg);
+    }
+    50%
+    {
+        background-image: url(../images/caravan2.jpg);
+    }
+    75%
+    {
+        background-image: url(../images/caravan3.jpg);
+    }
+    100%
+    {
+        background-image: url(../images/caravan4.jpg);
+    }
+}
+.body_section_1::after
+{
+    content: "In our University, you wont miss your DIRECTION";
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI',  sans-serif;
+    color: rgba(255, 255, 255, 0.829);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: .7;
+
+}
+.body_section_1 .fother
+{
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    z-index: 10;
+}
+.body_section_1 .fother div
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: crimson;
+    border-radius: 5px;
+    margin: 0px 20px 40px 20px;
+}
+.body_section_1 .fother div i
+{
+    font-size: 70px;
+    color: rgb(200, 219, 23);
+    margin-left: 15px;
+}
+.body_section_1 .fother div div
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 3px;
+}
+.body_section_1 .fother div div h2
+{
+    font-family: 'Segoe UI',sans-serif;
+    font-weight: 600;
+    color: white;
+    margin-top: 15px;
+    letter-spacing: .1rem;
+}
+.body_section_1 .fother div div h3
+{
+    margin-top: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+/*footer -----------------------------*/
+.footer
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    z-index: 10;
+}
+.footer div
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.footer div label
+{
+    font-size: 16px;
+    font-family: 'Segoe UI';
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+}
